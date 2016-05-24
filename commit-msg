@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# THE BEER-WARE LICENSE:
+# <leokewitz@gmail.com> wrote this file. As long as you retain this notice you
+# can do whatever you want with this stuff. If we meet some day, and you think
+# this stuff is worth it, you can buy me a beer in return.
+# Leonardo Kewitz
+
+if ! [[ $(cat $1) =~ ^(chore|docs|feat|fix|refactor|style|test): ]]; then
+  echo 'Please use semantic commit messages:'
+  echo 'feat: add hat wobble'
+  echo '^--^  ^------------^'
+  echo '|     |'
+  echo '|     +-> Summary in present tense.'
+  echo '|'
+  echo '+-------> Type: chore, docs, feat, fix, refactor, style, or test.'
+  exit 1
+fi
