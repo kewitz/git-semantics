@@ -4,6 +4,20 @@ Git hook to ensure semantic commit messages.
 You can install this on your templates using `./install.sh` so when you use `git init` you'll have this done.
 You can also install this on specific repositories copying `commit-msg` to `.git/hooks`.
 
+
+#### Emoji
+
+Optionally, you can use the `commit-emoji` script to add some emoji locally to your git logs.
+
+1. Add the `commit-emoji.sh` script somewhere in your path (I use `~/scripts/`)
+2. Edit your .gitconfig and set it as your pager
+
+```
+[core]
+  pager = ~/scripts/commit-emoji.sh | less --raw-control-chars -FXS -x2
+```
+
+
 #### Example
 ```
 leo@sputnik:~/Code/git-semantics$ git commit -am "teste"
@@ -19,6 +33,10 @@ leo@sputnik:~/Code/git-semantics$ git commit -m "feat: add installer"
  1 file changed, 23 insertions(+)
  create mode 100755 install.sh
 ```
+
+
+
+
 
 #### References
 
