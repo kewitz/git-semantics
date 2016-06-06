@@ -7,7 +7,7 @@ You can also install this on specific repositories copying `commit-msg` to `.git
 
 #### Emoji
 
-Optionally, you can use the `commit-emoji` script to add some emoji locally to your git logs.
+Optionally, you can use the `commit-emoji.sh` script to add some emoji locally to your git logs.
 
 1. Add the `commit-emoji.sh` script somewhere in your path (I use `~/scripts/`)
 2. Edit your .gitconfig and set it as your pager
@@ -27,7 +27,7 @@ feat: add hat wobble
 |     |
 |     +-> Summary in present tense.
 |
-+-------> Type: chore, docs, feat, fix, refactor, style, or test.
++-------> Type: chore, docs, feat, fix, merge, refactor, style, or test.
 leo@sputnik:~/Code/git-semantics$ git commit -m "feat: add installer"
 [master 6333498] feat: add installer
  1 file changed, 23 insertions(+)
