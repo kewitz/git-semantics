@@ -2,7 +2,7 @@
 
 VALUE=$(cat)
 
-printf "$VALUE" | \
+echo "$VALUE" | \
   sed 's/feat:/🎉  feat:/ ' | \
   sed 's/fix:/🐞  fix:/' | \
   sed 's/refactor:/🌀  refactor:/' | \
