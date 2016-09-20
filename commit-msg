@@ -20,3 +20,18 @@ if ! [[ $(cat $1) =~ ^(chore|docs|feat|fix|merge|refactor|style|test|wip): ]]; t
   printf "+---> Type: chore, docs, feat, fix, merge, refactor, style, test, or wip.\n${NC}"
   exit 1
 fi
+
+while read line; do
+  # Skip comments
+  if [ "${line:0:1}" == "#" ]; then
+    continue
+  fi
+  if [ ${#line} -ge 72 ]; then
+    echo -e "${yellow}Commit messages are limited to 72 characters.${NC}"
+    echo -e "The following commit message has ${red}${#line}${NC} characters."
+    echo "${line}"
+    exit 1
+  fi
+done < "${1}"
+
+exit 0
