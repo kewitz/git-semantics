@@ -12,12 +12,12 @@ blue='\033[0;34m'
 NC='\033[0m' # No colors
 
 
-if ! [[ $(cat $1) =~ ^(chore|docs|feat|fix|merge|refactor|style|test|wip): ]]; then
+if ! [[ $(cat $1) =~ ^(chore|docs|feat|fix|merge|refact|refactor|style|test|wip): ]]; then
   printf "${red}Please use semantic commit messages:\n"
   printf "${yellow}feat: ${blue}add hat wobble\n"
   printf "${yellow}^--^${blue}  ^------------^ ]-> Summary in present tense.${yellow}\n"
   printf "|\n"
-  printf "+---> Type: chore, docs, feat, fix, merge, refactor, style, test, or wip.\n${NC}"
+  printf "+---> Type: chore, docs, feat, fix, merge, refact, style, test, or wip.\n${NC}"
   exit 1
 fi
 
