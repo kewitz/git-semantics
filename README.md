@@ -47,8 +47,6 @@ leo@sputnik:~/Code/git-semantics$ git commit -m "feat: add installer"
 Code released under the Beer-Ware license.
 ```
 THE BEER-WARE LICENSE:
-<leokewitz@gmail.com> wrote this file. As long as you retain this notice you
-can do whatever you want with this stuff. If we meet some day, and you think
-this stuff is worth it, you can buy me a beer in return
-Leonardo Kewitz
+As long as you retain this notice you can do whatever you want with this stuff. If you meet any contributor some day, and you think this stuff is worth it, you can buy him a beer in return.
+You can check the people who contributed to this on https://github.com/kewitz/git-semantics/graphs/contributors.
 ```
