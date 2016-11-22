@@ -2,7 +2,7 @@
 Git hook to ensure semantic commit messages.
 
 You can install this on your templates using `./install.sh` so when you use `git init` you'll have this done.
-You can also install this on specific repositories copying `commit-msg` to `.git/hooks`.
+You can also use this only on specific projects running `./install.sh path/to/a/repo`
 
 
 #### Emoji
