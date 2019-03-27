@@ -11,8 +11,7 @@ yellow='\033[0;33m'
 blue='\033[0;34m'
 NC='\033[0m' # No colors
 
-
-if ! [[ $(cat $1) =~ ^(chore|docs|feat|fix|merge|refact|refactor|style|test|wip): ]]; then
+if ! [[ $(cat $1) =~ ^((chore|docs|feat|fix|merge|refact|refactor|style|test|wip):|Merge\ pull) ]]; then
   printf "${red}Please use semantic commit messages:\n"
   printf "${yellow}feat: ${blue}add hat wobble\n"
   printf "${yellow}^--^${blue}  ^------------^ ]-> Summary in present tense.${yellow}\n"
