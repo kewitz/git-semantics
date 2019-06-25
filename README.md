@@ -22,12 +22,11 @@ Optionally, you can use the `commit-emoji.sh` script to add some emoji locally t
 ```
 leo@sputnik:~/Code/git-semantics$ git commit -am "teste"
 Please use semantic commit messages:
-feat: add hat wobble
-^--^  ^------------^
-|     |
-|     +-> Summary in present tense.
-|
-+-------> Type: chore, docs, feat, fix, merge, refactor, style, or test.
+Please use semantic commit messages:
+feat[(scope)]: add hat wobble
+^--^ ^--*--^   ^------------^ -> Summary in present tense.
+ *      *-> [optional]: Scope of the commit.
+ *-> Type: chore, docs, feat, fix, merge, perf, refact, style, test, or wip.
 leo@sputnik:~/Code/git-semantics$ git commit -m "feat: add installer"
 [master 6333498] feat: add installer
  1 file changed, 23 insertions(+)
