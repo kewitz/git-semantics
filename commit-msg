@@ -12,12 +12,12 @@ blue='\033[0;34m'
 green='\033[0;32m'
 NC='\033[0m' # No colors
 
-if ! [[ $(cat $1) =~ ^((chore|docs|feat|fix|merge|refact|refactor|style|test|wip)(\([a-zA-Z0-9]+\))?:|Merge\ pull) ]]; then
+if ! [[ $(cat $1) =~ ^((chore|docs|feat|fix|merge|perf|refact|refactor|style|test|wip)(\([a-zA-Z0-9]+\))?:|Merge\ pull) ]]; then
   printf "${red}Please use semantic commit messages:\n"
   printf "${yellow}feat${NC}[${green}(scope)${NC}]: ${blue}add hat wobble\n"
   printf "${yellow}^--^${green} ^--*--^ ${blue}  ^------------^ -> Summary in present tense.\n"
   printf "${yellow} *      ${green}*-> [optional]: Scope of the commit.\n"
-  printf "${yellow} *-> Type: chore, docs, feat, fix, merge, refact, style, test, or wip.\n${NC}"
+  printf "${yellow} *-> Type: chore, docs, feat, fix, merge, perf, refact, style, test, or wip.\n${NC}"
   exit 1
 fi
 
